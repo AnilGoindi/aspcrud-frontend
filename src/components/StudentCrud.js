@@ -12,7 +12,7 @@ function StudentCrud() {
 
   async function Load() {
     try {
-      const response = await fetch("https://localhost:7023/api/Student/GetStudent");
+      const response = await fetch("https://localhost:7023/api/Student/GetStudent"); // get student info
       const data = await response.json();
       setUsers(data);
       console.log(data);
